@@ -57,11 +57,13 @@ buttonPrevious.addEventListener( "click", () => {
 
 } );
 
-// Create reference to HTML element, so NEXT button can be executed on click
+// Disable PREVIOUS button as default
 buttonPrevious.setAttribute( "disabled", true );
 
-// Event listener that will execute 'adjustCurrentIndex' function when NEXT button is clicked
+// Create reference to HTML element, so NEXT button can be executed on click
 const buttonNext = document.getElementById( "btn-next" );
+
+// Event listener that will execute 'adjustCurrentIndex' function when NEXT button is clicked
 buttonNext.addEventListener( "click", () => {
     // Function will run and direction is set to NEXT
     adjustCurrentIndex( "next" );
