@@ -2,16 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
     <title>Title</title>
 </head>
 <body>
-<button id="btn-previous">previous</button>
-<button id="btn-next">next</button>
-<p>Current item: <em id="current-item"></em></p>
+<form id="submit">
+    <div>
+        <button id="btn-previous">previous</button>
+        <button id="btn-next">next</button>
+        <p>Navigate entries: <em id="current-item"></em></p>
+    </div>
+    <div>
+        <label id="search-label" for="search">
+            <input id="search" type="search" placeholder="zoek of woord of letter(s)">
+            <button id="btn-search">search</button>
+        </label>
+        <p>Search results:</p>
+        <ul id="search-results">
+        </ul>
+    </div>
+</form>
 
-<ul id="array-items">
-
-</ul>
 <script src="main.js" type="module"></script>
 </body>
 </html>

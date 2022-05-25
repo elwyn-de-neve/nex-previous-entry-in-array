@@ -1,0 +1,11 @@
+#search-label {
+    display: block;
+}
+
+#btn-search {
+    margin-left: 4px;
+}
+
+#search:focus::placeholder {
+    color: transparent;
+}
